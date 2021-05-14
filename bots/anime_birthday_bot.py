@@ -1,7 +1,8 @@
 import tweepy
 import logging
-from config import create_api
 import time
+
+from configs.conf import create_api
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
@@ -9,7 +10,8 @@ logger = logging.getLogger()
 
 def tweet_birthday(api):
     logger.info('Tweeting birthdays')
-    api.update_status('This is my initial tweet. Hello world!')
+    # api.update_status('This is my initial tweet. Hello world!')
+    api.update_status('New tweet!')
 
 
 def main():
